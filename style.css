@@ -1,6 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
 /* Universal Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Inter', sans-serif; 
+    font-family: 'Mulish', sans-serif;
+    
+}
+/* =============== navigation section styles =============== */
+nav {
+    min-height:20px;
+     border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.75% 8.81%; 
+}
+
+
+
+.nav-title {
+    display: flex;
+    align-items: center;
+    gap: 16.63px;
+}
+
+.nav-title img {
+ object-fit: cover;
+}
+
+.nav-title>h1 {
+color: #131318;
+font-size: 36px;
+font-weight: 800;
+
+}
+.colored-text {
+ color: #FF5400;
+font-size: 36px;
+font-weight: 800;
+
+}
+
+.nav-links a {
+    text-decoration: none;  
+    color:#424247;
+}
+
+.nav-links {
+display: flex;
+gap: 44px;
+color:#424247;
+text-align: center;
+font-size: 18px;
+font-weight: 400;
+font-style: normal;
+}
+
+.nav-links :first-child > a{
+color: #FF5400;
+}
+
+.home {
+    font-weight: 700;
+}
+
+.burger-menu > button {
+font-size: 44px;
+background-color: transparent;
+border: 0;
+outline: none;
+text-align: center;
+display: none;
+
+
+}
+
+/* =============== banner section styles =============== */
+.banner-section {
+    background:
+    linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),
+     url('./resources/Group\ 13\ \(1\)\ \(1\).png');
+    /* border: 2px solid coral; */
+     min-height: 500px;
+    max-width: 1170px;
+    background-position: center;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 16px;
+    margin-top: 48px;
+}
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.banner-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+.banner-heading {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+    margin: 106px 287px 0;
+  
+}
+
+.banner-paragraph {
+color: #FFF;
+text-align: center;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+margin: 0 247px 48px;
+}
+.banner-menu {
+    display: flex;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    width: 800px;
+    height: 84px;
+    align-items: center;
+    padding: 16px;
+}
+.banner-menu-item {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FFF;
+    outline: none;
+    border: none;
+    padding-left: 16px;
+    
+    
+}
+.banner-menu-item::placeholder {
+color: rgba(19, 19, 24, 0.50);
+text-align: left;
+font-size: 16px;
+font-weight: 400;
+
+}
+
+#banner-btn {
+    background: #FF5400;
+    color: #FFF;
+    font-weight: 700;
+
+
+}
+#fa-1 {
+    color: #131318B2;
+    position: absolute;
+    right: 710px;
+    top: 445px;
+    font-size: 24px;
+}
+#fa-2 {
+    
+    color: #131318B2; 
+    position: absolute;
+    right: 510px;
+    top: 445px;
+    font-size: 24px;
+}
+
+#fa-3 {
+    color: #FFF;
+    font-size: 20px;
+    margin-right: 8px;
+}
+/* =============== responsive/break-point styles =============== */
+
+/* for small devices */
+@media only screen and (max-width: 600px) {
+ nav {
+    border: 2px solid rgb(38, 218, 32);
+ }
+
+ .nav-title img {
+    height: 28px;
+    width: 35px;
+ }
+
+ .nav-title>h1, .colored-text {
+    font-size: 21px;
+    }
+  
+ .nav-links {
+    display: none;
+ }
+ .burger-menu > button {
+    font-size: 44px;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+    
+    }
+
+   .burger-menu > button a {
+    text-decoration: none;
+    color: #131318;
+   }
+}
+
+/* for medium devices */
+@media only screen and (min-width:601px) and (max-width: 992px) {
+nav {
+    border: 2px solid blue;
+
+}
+
+
+}
+
+/* for large devices */
+
+@media only screen and (min-width: 993px) {
+
 }
