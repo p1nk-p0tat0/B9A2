@@ -99,7 +99,7 @@ display: none;
     margin: 0 auto;
     border-radius: 16px;
     margin-top: 48px;
-    border: 3px solid red;
+    
 }
 .banner {
     display: flex;
@@ -136,7 +136,6 @@ margin: 0 247px 48px;
     gap: 24px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
-    width: 800px;
     height: 84px;
     align-items: center;
     padding: 16px;
@@ -167,20 +166,12 @@ font-weight: 400;
 
 
 }
-#fa-1 {
-    color: #131318B2;
-    position: absolute;
-    right: 885px;
-    top: 445px;
-    font-size: 24px;
-}
-#fa-2 {
-    
-    color: #131318B2; 
-    position: absolute;
-    right: 685px;
-    top: 445px;
-    font-size: 24px;
+#When, #select-type {
+color: rgba(19, 19, 24, 0.50);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+
 }
 
 #fa-3 {
@@ -307,6 +298,14 @@ margin-bottom: 48px;
 
 }
 
+.choose-your-destination-images-container div:hover {
+
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out; 
+    outline:5px solid  #FF5400;
+    border-radius: 16px;
+}
+
 .Maldives {
     grid-column: 1 / span 6;
     grid-row: 1/span 1;
@@ -322,12 +321,11 @@ margin-bottom: 48px;
     margin: 0;
     color: #FFF;
     text-align: center;
-
     font-size: 28px;
-
     font-weight: 800;
 
 }
+
 
 .Indonesia {
     grid-column: 7/ span 6;
