@@ -19,13 +19,20 @@ button:hover {
  
 }
 /* =============== navigation section styles =============== */
-nav {
-    min-height:20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0.75% 8.81%; 
-}
+
+.navbar {
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+      padding-top: 50px;
+      width: 100%;
+      max-width: 1440px;
+    
+} 
+
 
 
 
@@ -33,6 +40,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 16.63px;
+    margin-left: 50px;
 }
 
 .nav-title img {
@@ -65,6 +73,13 @@ text-align: center;
 font-size: 18px;
 font-weight: 400;
 font-style: normal;
+margin-left: 300px;
+}
+.nav-links a:hover {
+  
+    border: 2px solid rgb(253, 151, 151);
+    border-radius: 6px;
+    
 }
 
 .nav-links :first-child > a{
@@ -91,7 +106,6 @@ display: none;
     background:
     linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),
      url('./resources/Group\ 13\ \(1\)\ \(1\).png');
-    /* border: 2px solid coral; */
      min-height: 500px;
     max-width: 1200px;
     background-position: center;
@@ -473,13 +487,111 @@ font-weight: 400;
 line-height: 26px;
 }
 
+/* =============== Radiant Quests Section Styles ===============  */
+.Quest-activities-section {
+    max-width: 1200px;
+  margin: 100px auto 0;
+  min-height: 500px;
+
+}
+
+.radiant-quest-text h1{
+
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-top: 15px;
+    margin-bottom: 24px;
+    text-decoration: underline;
+}
+
+.radiant-quest-text p{ 
+color: rgba(19, 19, 24, 0.70);
+text-align: center;
+font-family: Mulish;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+margin: 0 15px;
+}
+.radiant-quest-text h2 {
+color: #FF5400;
+text-align: center;
+font-family: Mulish;
+font-size: 35px;
+font-style: normal;
+font-weight:bold;
+line-height: normal;
+margin-bottom: 24px;
+}
+
+#radiant-hr {
+    background: rgba(19, 19, 24, 0.10);
+    /* width: 393px; */
+    width: 50%;
+    height: 1px;
+    margin: 24px auto;
+    opacity: 10%;
+}
+
+.radiant-quest-activities {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    gap: 15px;
+    
+   
+}
+
+.fishing, .mystery, .photography {
+    padding: 30px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+   
+}
+.fishing:hover, .mystery:hover, .photography:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out; 
+    outline:3px solid  #FF5400;
+    border-radius: 16px;
+}
+.radiant-quest-activities img {
+    height: 250px;
+    width:300px;
+    object-fit: cover;
+}
+.radiant-quest-activities i {
+    font-size: 34px;
+    color: #FF5400;
+    
+
+}
+
+.radiant-quest-activities h2 {
+    color: #FF5400;  
+}
+.radiant-quest-activities p {
+   font-weight: 500;
+   overflow: auto;
+
+  
+}
+
 /* =============== newsletter section styles =============== */
 
 .newsletter-section {
-     border: 2px solid red; 
   max-width: 1200px;
-  /* margin: 100px 8.81%;  */
-  margin: 100px auto;
+  margin: 100px auto 0;
   min-height: 500px;
   display: flex;
   justify-content:space-between;
@@ -512,7 +624,7 @@ font-family: Mulish;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: 26px; /* 162.5% */
+line-height: 26px; 
 }
 
 .newsletter-subscription hr {
@@ -605,14 +717,69 @@ font-weight: 800;
 line-height: normal;
 }
 
+/* =============== footer section styles =============== */
+.footer-section {
+    width: 1440px;
+    background: rgba(19, 19, 24, 0.05);
+    min-height: 500px;
+    margin: 100px auto 0;
+}
+.footer-title {
+   
+    margin:0 35% 15px 35%;
+    padding-top: 150px;
+    
+}
+
+.footer-description {
+color: #5A5A5D;
+text-align: center;
+font-size: 16px;
+margin: 15px 15% 33px;
+font-weight: 400; 
+}
+#footer-hr1, #footer-hr2 {
+width: 1320px;
+height: 1px;
+background: rgba(255, 255, 255, 0.15);
+
+}
+#footer-hr1 {
+    opacity: 0.15%;
+}
+#footer-hr2 {
+    margin: 50px auto;
+    opacity: 10%;
+
+}
+.footer-socials {
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.copyright {
+    margin: 50px, auto;
+    color: #131318;
+    font-family: Inter;
+    font-size: 16px;
+    text-align: center;
+
+    font-weight: 300;
+
+}
 
 /* =============== responsive/break-point styles =============== */
 
 /* for small devices */
 @media only screen and (max-width: 600px) {
- /* nav {
+  .navbar {
+    max-width: 500px;
+   margin: 0 20px;
    
- } */
+ } 
 
  .nav-title img {
     height: 28px;
@@ -634,6 +801,10 @@ line-height: normal;
     text-align: center;
     display: block;
     margin-bottom: 10px;
+  
+    
+    }
+    .burger-menu {
     
     }
 
@@ -643,16 +814,31 @@ line-height: normal;
    }
 }
 
-/* for medium devices */
-@media only screen and (min-width:601px) and (max-width: 991px) {
-/* nav {
-   
 
-} */
-
-
+.banner-section {
+    width: auto;
+    height: 483px;
+    flex-shrink: 0;
+    margin: 20px;
 }
 
+.banner-heading { 
+    font-size: 32px;
+    margin: 35px auto 0;
+}
+.banner-paragraph {
+    font-size: 14px;
+    margin: 10px auto;
+}
+.banner-menu { 
+    flex-direction: column;
+   height: auto;
+   width: 500px;
+ 
+}
+.banner-menu-item {
+    width: 355px;
+}
 /* for large devices */
 
 @media only screen and (min-width: 992px) {
